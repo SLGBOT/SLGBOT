@@ -70,7 +70,7 @@ Client.on("message", async (message) => {
             .setColor('#C5370A')
             .setTitle("__SLG | Réseaux Sociaux__")
             .setDescription("Vous avez effectué la commande slg.")
-            .addField("__Youtube__", "[ | SLG | ](https://www.youtube.com/channel/UC0Kk_3WM0wCuMkvBkOl8K1A?view_as=subscriber)")
+            .addField("__Youtube__", "[ | Clic | ](https://www.youtube.com/channel/UC0Kk_3WM0wCuMkvBkOl8K1A?view_as=subscriber)")
             .setFooter("Soutien nous : SUPERLEAGUEGAME")
         message.channel.sendEmbed(help_embed);
         //messagechannel
