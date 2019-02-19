@@ -109,6 +109,7 @@ Client.on("message", async (message) => {
             .setTitle("__Listes des commandes - (5)__")
             .setDescription("Pour pouvoir effectué la commande, veuillez mètre avant la commande ``;<commande>``")
             .addField("Général - (5)", "``invite``, ``aide``, ``slg``, ``soutien``, ``info``")
+            .setFooter("Créateur du bot  : Néo#0486")
         message.channel.sendEmbed(help_embed);
         //messagechannel
         console.log("Commande Help demandée !");
