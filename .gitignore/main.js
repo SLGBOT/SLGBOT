@@ -6,7 +6,7 @@ const prefix = ";"
 
 Client.on("ready", () => {
 	console.log("online");
-	Client.user.setPresence({ game: { name: `Fortnite Legends`, type: 0} });
+	Client.user.setPresence({ game: { name: `;commandes | SLG`, type: 0} });
 });
 
 
