@@ -44,7 +44,7 @@ Client.on("message", async (message) => {
             .setColor('#C5370A')
             .setTitle("__SLG | invite__")
             .setDescription("Vous avez effectué la commande invite.")
-            .addField("Invite", "``[Cliquez ici pour inviter SLG | BOT](https://discordapp.com/oauth2/authorize?client_id=547454260988870686&scope=bot&permissions=8)``")
+            .addField("Invite", "[Cliquez ici pour inviter SLG | BOT](https://discordapp.com/oauth2/authorize?client_id=547454260988870686&scope=bot&permissions=8)")
             .setFooter("Soutien nous : SUPERLEAGUEGAME")
         message.channel.sendEmbed(help_embed);
         //messagechannel
