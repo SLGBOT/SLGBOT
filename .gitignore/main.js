@@ -112,6 +112,16 @@ Client.on("message", async (message) => {
         console.log("Commande Help demandée !");
     
 	}
+	
+	    if (message.content === prefix + `commandes`){
+        var help_embed = new Discord.RichEmbed()
+            .setColor("#D31E34")
+            .addField(":computer: Commandes Staff :", "  \n   \n **;ban** : Sert à bannir les personnes ! \n   \n **;kick** : Sert à expulser des personnes ! \n   \n **;warn** : Sert à avertir des personnes !")
+        message.channel.sendEmbed(help_embed);
+        //messagechannel
+        console.log("Commande Help demandée !");
+    
+	}
 	 
 	 
 
