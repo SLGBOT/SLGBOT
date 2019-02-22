@@ -44,7 +44,7 @@ Client.on("message", async (message) => {
             .setColor('#C5370A')
             .setTitle("__SLG | invite__")
             .setDescription("Vous avez effectué la commande invite.")
-            .addField("Invite", "[Cliquez ici pour inviter SLG | BOT](https://discordapp.com/oauth2/authorize?client_id=547454260988870686&scope=bot&permissions=8)")
+            .addField("Invite", "``[Cliquez ici pour inviter SLG | BOT](https://discordapp.com/oauth2/authorize?client_id=547454260988870686&scope=bot&permissions=8)``")
             .setFooter("Soutien nous : SUPERLEAGUEGAME")
         message.channel.sendEmbed(help_embed);
         //messagechannel
@@ -105,11 +105,8 @@ Client.on("message", async (message) => {
     
     if (message.content === prefix + `commandes`){
         var help_embed = new Discord.RichEmbed()
-            .setColor("RANDOM")
-            .setTitle("__Listes des commandes - (5)__")
-            .setDescription("Pour pouvoir effectué la commande, veuillez mètre avant la commande ``;<commande>``")
-            .addField("Général - (5)", "``invite``, ``aide``, ``slg``, ``soutien``, ``info``")
-            .setFooter("Créateur du bot  : Néo#0486")
+            .setColor("#35CEB1")
+            .addField(":computer: Commandes :", "  \n   \n **;invite** : Sert à inviter le bot sur votre discord ! \n   \n **;soutien** : Sert à voir en temps réel le nombre de soutiens ! \n   \n **;aide** : Sert à t'aider créer un ticket pour t'aider ``+new`` ! \n   \n **;slg** ! Sert à te donner les réseauc sociaux de slg ! \n   \n **;info** : Sert à voir le nombres d'utilisateurs connecté sur le discord !")
         message.channel.sendEmbed(help_embed);
         //messagechannel
         console.log("Commande Help demandée !");
