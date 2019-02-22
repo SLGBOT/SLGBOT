@@ -106,7 +106,7 @@ Client.on("message", async (message) => {
     if (message.content === prefix + `commandes`){
         var help_embed = new Discord.RichEmbed()
             .setColor("#35CEB1")
-            .addField(":computer: Commandes :", "  \n   \n **;invite** : Sert à inviter le bot sur votre discord ! \n   \n **;soutien** : Sert à voir en temps réel le nombre de soutiens ! \n   \n **;aide** : Sert à t'aider créer un ticket pour t'aider ``+new`` ! \n   \n **;slg** ! Sert à te donner les réseauc sociaux de slg ! \n   \n **;info** : Sert à voir le nombres d'utilisateurs connecté sur le discord !")
+            .addField(":computer: Commandes :", "  \n   \n **;invite** : Sert à inviter le bot sur votre discord ! \n   \n **;soutien** : Sert à voir en temps réel le nombre de soutiens ! \n   \n **;aide** : Sert à t'aider,tu as juste à créer un ticket : ``+new`` ! \n   \n **;slg** ! Sert à te donner les réseauc sociaux de slg ! \n   \n **;info** : Sert à voir le nombres d'utilisateurs connecté sur le discord !")
         message.channel.sendEmbed(help_embed);
         //messagechannel
         console.log("Commande Help demandée !");
