@@ -152,6 +152,34 @@ Client.on("message", async (message) => {
         console.log("Commande Help demandée !");
     
 	}
+	
+	    client.on('message', msg => {
+        // Embedded
+        if(msg.content.startsWith(prefix + 'ecat')) {
+            try {
+                get('https://aws.random.cat/meow').then(res => {
+                    const embed = new Discord.RichEmbed()
+                    .setImage(res.body.file)
+                    return msg.channel.send({embed});
+                });
+            } catch(err) {
+                return msg.channel.send(error.stack);
+            }
+        }
+        
+        // Non-embedded
+        if(msg.content.startsWith(prefix + 'cat')) {
+            try {
+                get('https://aws.random.cat/meow').then(res => {
+                    return message.channel.send({files: [{attachment: response.body.file, name: `cat.${response.body.file.split('.')[2]}`}]});
+                });
+            } catch(err) {
+                return msg.channel.send(error.stack);
+            }
+        }
+    
+    });
+});
 	 
 
 });
