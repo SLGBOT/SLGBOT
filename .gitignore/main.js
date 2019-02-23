@@ -122,7 +122,36 @@ Client.on("message", async (message) => {
         console.log("Commande Help demandée !");
     
 	}
-	 
+
+	    if (message.content === prefix + `ban`){
+        var help_embed = new Discord.RichEmbed()
+            .setColor("#D31E34")
+            .addField(":computer: Ban (Staff) :", "``Vous navez pas les autorisations nécessaire !")
+        message.channel.sendEmbed(help_embed);
+        //messagechannel
+        console.log("Commande Help demandée !");
+    
+	}
+	
+           if (message.content === prefix + `kick`){
+        var help_embed = new Discord.RichEmbed()
+            .setColor("#D31E34")
+            .addField(":computer: Kick (Staff) :", "``Vous navez pas les autorisations nécessaire !")
+        message.channel.sendEmbed(help_embed);
+        //messagechannel
+        console.log("Commande Help demandée !");
+    
+	}
+	
+	   if (message.content === prefix + `warn`){
+        var help_embed = new Discord.RichEmbed()
+            .setColor("#D31E34")
+            .addField(":computer: Warn (Staff) :", "``Vous navez pas les autorisations nécessaire !")
+        message.channel.sendEmbed(help_embed);
+        //messagechannel
+        console.log("Commande Help demandée !");
+    
+	}
 	 
 
 });
