@@ -77,6 +77,17 @@ Client.on("message", async (message) => {
         console.log("Commande Help demandée !");
     
     }
+
+    if (message.content === prefix + `soutien`){
+        var help_embed = new Discord.RichEmbed()
+            .setColor("#D31E34")
+            .addField(":cyclone: Mise à jour (Code Créateur) :", "``Mise à jour des soutiens en cours ...``")
+        message.channel.sendEmbed(help_embed);
+        //messagechannel
+        console.log("Commande Help demandée !");
+    
+    }
+
     
     if (message.content === prefix + `soutien`){
         var help_embed = new Discord.RichEmbed()
