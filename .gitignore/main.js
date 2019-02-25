@@ -6,7 +6,7 @@ const prefix = ";"
 
 Client.on("ready", () => {
 	console.log("online");
-	Client.user.setPresence({ game: { name: `;commandes | SLG`, type: 0} });
+	Client.user.setPresence({ game: { name: `;commandes`, type: 0} });
 });
 
 
@@ -38,6 +38,16 @@ Client.on("message", async (message) => {
         console.log("Commande Help demandée !");
     
     }
+
+    bot.on('guildMemberAdd', member => {
+        bot.channels.get('546688474221379584').send(`Bienvenue à toi ${member}`);
+
+    bot.on('guildMemberAdd', member => {
+        bot.channels.get('546688474221379584').send(`Aurevoir à toi ${member}`);
+
+    });
+    
+    })
     
     if (message.content === prefix + `invite`){
         var help_embed = new Discord.RichEmbed()
@@ -94,7 +104,7 @@ Client.on("message", async (message) => {
             .setColor('#C5370A')
             .setTitle("__SLG | Soutiens__")
             .setDescription("Vous avez effectué la commande soutiens.")
-            .addField("__Nombre de soutiens__", "``16 Soutiens ~ Approximativement $7.00~``")
+            .addField("__Nombre de soutiens__", "``16 Soutiens ~ Approximativement $3.00~``")
             .setFooter("Soutien nous : SUPERLEAGUEGAME")
         message.channel.sendEmbed(help_embed);
         //messagechannel
@@ -155,6 +165,7 @@ Client.on("message", async (message) => {
 	}
 	
 	   if (message.content === prefix + `warn`){
+        if (!messag)
         var help_embed = new Discord.RichEmbed()
             .setColor("#D31E34")
             .addField(":computer: Warn (Staff) :", "``Vous navez pas les autorisations nécessaire !``")
