@@ -9,14 +9,6 @@ Client.on("ready", () => {
 	Client.user.setPresence({ game: { name: `;commandes`, type: 0} });
 });
 
-    bot.on('guildMemberAdd', member => {
-        bot.channels.get('546688474221379584').send(`Bienvenue à toi ${member}`);
-
-    bot.on('guildMemberAdd', member => {
-        bot.channels.get('546688474221379584').send(`Aurevoir à toi ${member}`);
-
-    });
-
 
 Client.on("message", async (message) => {
 	if (message.author.bot) return;
