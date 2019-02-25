@@ -6,7 +6,19 @@ const prefix = ";"
 
 Client.on("ready", () => {
 	console.log("online");
-	Client.user.setPresence({ game: { name: `;commandes`, type: 0} });
+	Client.user.setPresence({ game: { name: `;commandes | SLG`, type: 0} });
+});
+
+bot.on('guildMemberAdd', member => {
+
+    let serverTag = member.guild.name
+    const welcomechannel = member.guild.channels.find('id', '546688474221379584')
+    const role = member.guild.roles.find("name", "Membre | SLG")    
+    member.addRole(role)
+    var embed = new Discord.RichEmbed()
+    .setColor('#76D880')
+    .setDescription(`:inbox_tray: <@${member.user.id}> à rejoint ${serverTag}`)
+    return welcomechannel.send({embed})
 });
 
 
@@ -165,6 +177,8 @@ Client.on("message", async (message) => {
         console.log("Commande Help demandée !");
     
     }
+
+    
 
 
 });
