@@ -58,7 +58,7 @@ Client.on("message", async (message) => {
             .setColor('#C5370A')
             .setTitle("__SLG | Aide__")
             .setDescription("Vous avez effectué la commande aide.")
-            .addField("Besoin d'aide ?", "Dirige toi vers le salon 【aide】et fais la commande ``+new``")
+            .addField("Besoin d'aide ?", "Dirige toi vers le salon #【aide】et fais la commande ``+new``")
             .setFooter("Soutien nous : SUPERLEAGUEGAME")
         message.channel.sendEmbed(help_embed);
         //messagechannel
@@ -95,7 +95,7 @@ Client.on("message", async (message) => {
             .setColor('#C5370A')
             .setTitle("__SLG | Soutiens__")
             .setDescription("Vous avez effectué la commande soutiens.")
-            .addField("__Nombre de soutiens__", "``16 Soutiens ~ Approximativement $3.00~``")
+            .addField("__Nombre de soutiens__", "``18Soutiens | Approximativement $6.49``")
             .setFooter("Soutien nous : SUPERLEAGUEGAME")
         message.channel.sendEmbed(help_embed);
         //messagechannel
