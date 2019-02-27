@@ -78,6 +78,19 @@ Client.on("message", async (message) => {
         console.log("Commande Help demandée !");
     
     }
+	
+    if (message.content === prefix + `zts`){
+        var help_embed = new Discord.RichEmbed()
+            .setColor('#C5370A')
+            .setTitle("__ZTS | Réseaux Sociaux__")
+            .setDescription("Vous avez effectué la commande zts.")
+            .addField("__Youtube__", "[ | Clic | ](https://www.youtube.com/channel/UCWQ_PiGziCV1uAIb6ZdGahA?view_as=subscriber)")
+            .setFooter("Abonne toi ! :)")
+        message.channel.sendEmbed(help_embed);
+        //messagechannel
+        console.log("Commande Help demandée !");
+    
+    }
 
     if (message.content === prefix + `soutien`){
         var help_embed = new Discord.RichEmbed()
