@@ -108,7 +108,7 @@ Client.on("message", async (message) => {
             .setColor('#C5370A')
             .setTitle("__SLG | Soutiens__")
             .setDescription("Vous avez effectué la commande soutiens.")
-            .addField("__Nombre de soutiens__", "``26 Soutiens | Approximativement $18``")
+            .addField("__Nombre de soutiens__", "``30 Soutiens | Approximativement $22.00``")
             .setFooter("Soutien nous : SUPERLEAGUEGAME")
         message.channel.sendEmbed(help_embed);
         //messagechannel
